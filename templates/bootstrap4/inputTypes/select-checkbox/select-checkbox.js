@@ -1,5 +1,9 @@
-import { Template } from 'meteor/templating';
+import { Template } from 'meteor/templating'
+import { selectedAttsAdjustGroup } from '../../../../utils/selectedAttsAdjust'
+import { dataSchemaKey } from '../../../../utils/dataSchemaKey'
+import './select-checkbox.html'
 
-import './select-checkbox.html';
-
-Template.afCheckboxGroup_bootstrap4.inheritsHelpersFrom('afCheckboxGroup_bootstrap3');
+Template.afCheckboxGroup_bootstrap4.helpers({
+  atts: selectedAttsAdjustGroup,
+  dsk: dataSchemaKey
+})

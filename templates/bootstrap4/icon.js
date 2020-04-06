@@ -1,1 +1,1 @@
-import './icon.html';
+import './icon.html'

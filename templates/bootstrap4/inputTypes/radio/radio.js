@@ -1,5 +1,7 @@
-import { Template } from 'meteor/templating';
+import { Template } from 'meteor/templating'
+import { selectedAttsAdjust } from '../../../../utils/selectedAttsAdjust'
+import './radio.html'
 
-import './radio.html';
-
-Template.afRadio_bootstrap4.inheritsHelpersFrom('afRadio_bootstrap3');
+Template.afRadio_bootstrap4.helpers({
+  atts: selectedAttsAdjust
+})

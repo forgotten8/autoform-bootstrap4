@@ -1,5 +1,9 @@
-import { Template } from 'meteor/templating';
+import { Template } from 'meteor/templating'
+import { selectedAttsAdjustGroup } from '../../../../utils/selectedAttsAdjust'
+import { dataSchemaKey } from '../../../../utils/dataSchemaKey'
+import './select-radio.html'
 
-import './select-radio.html';
-
-Template.afRadioGroup_bootstrap4.inheritsHelpersFrom('afRadioGroup_bootstrap3')
+Template.afRadioGroup_bootstrap4.helpers({
+  atts: selectedAttsAdjustGroup,
+  dsk: dataSchemaKey
+})
