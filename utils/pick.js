@@ -1,8 +1,9 @@
-export const pick = function pick (object, keys) {
-  return keys.reduce((obj, key) => {
-    if (object && Object.prototype.hasOwnProperty.call(object, key)) {
+export const pick = function pick (object = {}, keys = []) {
+  const obj = {}
+  Object.keys(object).forEach(key => {
+    if (keys.includes(key)) {
       obj[key] = object[key]
     }
-    return obj
-  }, {})
+  })
+  return obj
 }
