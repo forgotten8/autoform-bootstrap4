@@ -26,7 +26,7 @@ The templates are imported using `dynamic-import` like the following:
 import  { AutoFormBootstrap4 } from 'meteor/jkuester:autoform-bootstrap4'
 
 AutoFormBootstrap4.load()
-  .then(() => ...)
+  .then(() => { /* ... */ })
   .catch(e => console.error(e))
 ```
 
@@ -38,3 +38,13 @@ import  { AutoFormBootstrap4 } from 'meteor/jkuester:autoform-bootstrap4'
 
 AutoForm.setDefaultTemplate(AutoFormBootstrap4.template)
 ```
+
+## History
+
+- 1.0.2
+  - input type select-radio uses [bs4 custom-radio skin](https://getbootstrap.com/docs/4.5/components/forms/#radios)
+  - input type select-radio-inline uses [bs4 custom-radio-inline skin](https://getbootstrap.com/docs/4.5/components/forms/#inline-1)
+  - input type select-checkbox uses [bs4 custom-checkbox skin](https://getbootstrap.com/docs/4.5/components/forms/#checkboxes)
+  - 
+- 1.0.1
+  - import via dynamic imports
