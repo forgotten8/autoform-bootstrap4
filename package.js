@@ -1,7 +1,7 @@
 /* eslint-env meteor */
 Package.describe({
   name: 'jkuester:autoform-bootstrap4',
-  version: '1.0.1',
+  version: '1.0.2',
   // Brief, one-line summary of the package.
   summary: 'Bootstrap 4 templates for Meteor AutoForm and dynamic imports',
   // URL to the Git repository containing the source code for this package.
@@ -20,6 +20,3 @@ Package.onUse(function (api) {
     'aldeed:autoform@6.3.0'], 'client')
   api.mainModule('autoform-bootstrap4.js', 'client')
 })
-
-// Package.onTest(function(api) {
-// });
