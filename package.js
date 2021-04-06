@@ -17,6 +17,6 @@ Package.onUse(function (api) {
   api.use('dynamic-import')
   api.use([
     'templating@1.3.2',
-    'aldeed:autoform@6.3.0'], 'client')
+    'aldeed:autoform@7.0.0'], 'client')
   api.mainModule('autoform-bootstrap4.js', 'client')
 })
